@@ -4,10 +4,9 @@
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
                 <div class="sidebar-brand-icon">
-                    <i class="icofont-bear-face"></i>
-
+                    <i class="icofont-circuit"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">Brand<sup>ERP</sup></div>
+                <div class="sidebar-brand-text mx-3">STRATUS<sup>ERP</sup></div>
             </a>
 
             <!-- Divider -->
@@ -15,7 +14,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
-                <a class="nav-link" href="index.html">
+                <a class="nav-link" href="{{ route('app.home') }}">
                     <i class="icofont-dashboard-web"></i>
                     <span>Dashboard</span></a>
             </li>
@@ -24,22 +23,23 @@
             <hr class="sidebar-divider">
 
             <!-- Heading -->
-            <div class="sidebar-heading">
+            {{-- <div class="sidebar-heading">
                 Interface
-            </div>
+            </div> --}}
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
                     aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-fw fa-cog"></i>
-                    <span>Components</span>
+                    <i class="icofont-line-block-down"></i> 
+                    <span>Suprimentos</span>
                 </a>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Custom Components:</h6>
-                        <a class="collapse-item" href="buttons.html">Buttons</a>
-                        <a class="collapse-item" href="cards.html">Cards</a>
+                        <a class="collapse-item" href="{{ route('produto.index') }}">Produtos</a>
+                        <a class="collapse-item" href="{{ route('marca.index') }}">Marcas</a>
+                        <a class="collapse-item" href="{{ route('category.index') }}">Categoria</a>
+                        <a class="collapse-item" href="{{ route('unidade-medida.index') }}">Marcas</a>
                     </div>
                 </div>
             </li>
@@ -117,8 +117,10 @@
             <!-- Sidebar Message -->
             <div class="sidebar-card d-none d-lg-flex">
                 <img class="sidebar-card-illustration mb-2" src="img/undraw_rocket.svg" alt="...">
-                <p class="text-center mb-2"><strong>SB Admin Pro</strong> is packed with premium features, components, and more!</p>
-                <a class="btn btn-success btn-sm" href="https://startbootstrap.com/theme/sb-admin-pro">Upgrade to Pro!</a>
+                <p class="text-center mb-2"><strong>SB Admin Pro</strong> is packed with premium features, components,
+                    and more!</p>
+                <a class="btn btn-success btn-sm" href="https://startbootstrap.com/theme/sb-admin-pro">Upgrade to
+                    Pro!</a>
             </div>
 
         </ul>
