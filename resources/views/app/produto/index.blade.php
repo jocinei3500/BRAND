@@ -1,10 +1,7 @@
-@include('app.layouts.header')   
-@include('app.layouts.sidebar')       
-    <div id="content-wrapper" class="d-flex flex-column">
-    <div id="content">
-@include('app.layouts.topbar')
-     <!-- Begin Page Content -->
-     <div class="container-fluid">
+@extends('app.layouts.app')
+@section('content')
+    <!-- Begin Page Content -->
+    <div class="container-fluid">
         <div class="card">
             <div class="card-header-template">
                 <div>LISTAGEM DE PRODUTOS</div>
@@ -51,7 +48,8 @@
                                             action="{{ route('produto.destroy', ['produto' => $produto->id]) }}">
                                             @method('DELETE')
                                             @csrf
-                                            <a class="btn btn-sm-template btn-danger mx-1 @can('user') disabled @endcan" href="#"
+                                            <a class="btn btn-sm-template btn-danger mx-1 @can('user') disabled @endcan"
+                                                href="#"
                                                 onclick="document.getElementById('form_{{ $produto->id }}').submit()"><i
                                                     class="icofont-close-squared-alt"></i></a>
                                         </form>
@@ -63,7 +61,7 @@
                     </tbody>
                 </table>
                 <div class="d-flex justify-content-center">
-                   {{$produtos->appends($request)->links()}} 
+                    {{ $produtos->appends($request)->links() }}
                 </div>
 
             </div>
@@ -73,9 +71,4 @@
 
     </div>
     <!-- /.container-fluid -->
-    
-@include('app.layouts.footer')  
-
-
-
-
+@endsection

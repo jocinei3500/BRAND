@@ -16,7 +16,7 @@
             <li class="nav-item active">
                 <a class="nav-link" href="{{ route('app.home') }}">
                     <i class="icofont-dashboard-web"></i>
-                    <span>Dashboard</span></a>
+                    <span>Início</span></a>
             </li>
 
             <!-- Divider -->
@@ -31,7 +31,6 @@
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
                     aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="icofont-line-block-down"></i> 
                     <span>Suprimentos</span>
                 </a>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">

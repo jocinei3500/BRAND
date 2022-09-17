@@ -17,6 +17,8 @@
 
     <!-- Custom styles for this template-->
     <link rel="stylesheet" href="{{asset('css/sb-admin-2.min.css')}}" rel="stylesheet'">
+    <link rel="stylesheet" href="{{asset('css/icofont.min.css')}}">
+    <link rel="stylesheet" href="{{asset('css/template.css')}}">
 
 </head>
 
@@ -45,7 +47,7 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2021</span>
+                        <span>Copyright &copy; Jocinei da Rosa</span>
                     </div>
                 </div>
             </footer>
